@@ -14,9 +14,9 @@ namespace areaCalc
 
         // I use 3 doubles instead of array to guarantee that triangle will have exactly 3 sides
         // Also, it will simplify both Area and Perimeter calculation
-        public double Side1 { get; set; }
-        public double Side2 { get; set; }
-        public double Side3 { get; set; }
+        public double Side1 { get; private set; }
+        public double Side2 { get; private set; }
+        public double Side3 { get; private set; }
         public bool IsRightTriangle { get; private set; }
 
         public Triangle (double side1, double side2, double side3)
